@@ -44,6 +44,7 @@ void main() {
       //dropdown find item 'three'
       await tester.tap(find.text('Three').last);
       //dropdown tap on position
+      //position tap
       //await tester.tapAt(Offset(200, 400));
       await tester.pumpAndSettle(Duration(seconds: 1));
       expect(find.text('Three'), findsOneWidget);
